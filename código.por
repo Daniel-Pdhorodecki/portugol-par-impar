@@ -1,6 +1,6 @@
 programa {
     funcao inicio() {
-        inteiro impar, par
+        inteiro i, impar, par
         cadeia listaDePares, liataDeImpares
 
         listaDePares = ""
@@ -12,10 +12,9 @@ programa {
         escreva("+=+=+=+=+Números Pares e ípares até 100=+=+=+=+\n")
         escreva("+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+\n\n")
 
-        para(inteiro i; i=0; i<=100; i++) {
+        para(i=0; i<=100; i++) {
             se(i%2==0) {
                 par = par + 1
-
                 se(par == 1) {
                     listaDePares = listaDePares + i
                 } senao {
@@ -23,7 +22,6 @@ programa {
                 }
             } senao {
                 impar = impar + 1
-
                 se(impar == 1) {
                     liataDeImpares = liataDeImpares + i
                 } senao {
